@@ -18,6 +18,10 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: VitaliySynytskyi
           base: achievements
+          plugin_achievements: yes
+          plugin_achievements_secrets: yes      # Display unlocked secrets achievements
+          plugin_achievements_display: compact  # Use compact display
+          plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
 
   github-metrics:
     runs-on: ubuntu-latest
